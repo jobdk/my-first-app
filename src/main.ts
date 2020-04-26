@@ -12,5 +12,5 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
+platformBrowserDynamic().bootstrapModule(AppModule) // bootstrap starts our angular app by passing a app moudle to our method
   .catch(err => console.error(err));
