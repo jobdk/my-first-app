@@ -1,4 +1,3 @@
 <!--like in app - it's the selector-->
 
-<p>{{'Server'}} with ID {{serverId}} is {{serverStatus}}</p>
-<p>{{getServerStatus()}}</p>
+<p [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{online: serverStatus== 'online'}">{{serverStatus}}</p>
